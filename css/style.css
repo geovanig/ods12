@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Oswald:wght@300&family=Work+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Oswald:wght@300&family=Work+Sans:ital@1&display=swap');
+
+.titulo{
+    color:white;
+    text-align: center;
+    font-family: 'Work Sans', 'Oswald', sans-serif;
+    text-shadow: 0.1em 0.1em #333
+}
+
+body{
+    background: rgb(191,139,46);
+    background: linear-gradient(90deg, rgb(102, 72, 17) 23%, rgba(105,91,30,1) 52%, rgb(136, 109, 71) 81%);
+}
+
+.caixa{
+    background-color:white;
+    padding: 1rem;
+}
+
+.texto{
+    font-family: 'Luxurious Roman', cursive;
+}
+
+.imgODS{
+    height: 250px;
+    width: 250px;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.margem{
+    padding: 1rem;
+}
+
+.lista li{
+    color: white;
+    font-size: 1.4rem;
+    padding: 1rem;
+    list-style-type: none;
+    text-align: center;
+}
+.lista li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.lista li a:hover{
+    font-size: 1.6rem;
+}
+
+.listaHorizontal ul{
+    text-align: center;
+}
+.listaHorizontal li{
+    color: white;
+    font-size: 1.4rem;
+    padding: 2rem;
+    display: inline;
+}
+.listaHorizontal li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.listaHorizontal li a:hover{
+    color: rgb(255, 201, 121);
+}  
+
+  header {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    background: rgb(191,139,46);
+    color: #f4f4f4;
+    padding: 1rem;
+  }
+  
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header ul li {
+    padding-top: 1rem;
+    padding-right: 4.2rem;
+    padding-bottom: 1rem;
+    padding-left: 4.2rem;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 1.250rem;
+  }
+
+  .botao{
+      display: none;
+  }
+
+  @media (max-width: 768px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul{
+      position: absolute;
+      left: 0;
+      top: -100%;
+      width: 100%;
+      height: calc(50vh - 4rem);
+      flex-direction: column;
+      background-color: rgb(191,139,46);
+      transition: .3s;
+      align-items: center;
+    }
+  
+    header.ativo ul {
+      opacity: 1;
+      top: 70px
+    }
+  
+    .botao {
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background-image: url("https://img.icons8.com/material-outlined/48/ffffff/menu--v1.png");
+    }
+  
+    header.ativo .botao {
+      background-image: url("https://img.icons8.com/material-outlined/48/ffffff/multiply--v1.png");
+    }
+  }
